@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>Geo Lab</title>
+
+	<!-- using font-awasome for icons -->
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- 
+CSIS 1280 TERM PROJECT
+Name: Furkan BOZOKLUOGLU
+id: 300335207
+
+Resources for website content;
+https://www.linkedin.com/ for petrograper backgrounds
+https://www.pexels.com/ for photos 
+https://www.youtube.com/ for related video content 
+https://precisionpetrographics.com/ , http://www.nationalpetrographic.com/  , https://www.vanpetro.com/ , for content and design ideas 
+
+-->
+
+<body>
+
+	<div class="site-content">
+		<header class="site-header collapsed-nav" data-bg-image="">
+			<div class="container">
+				<div class="header-bar">
+					<div class="header-content">
+						<a href="index.html" class="brand">
+							<img src="images/logo.png" alt="" class="logo">
+							<div class="logo-type">
+								<h1 class="site-title">Geo Lab</h1>
+								<small class="site-description">Petrography Consulting</small>
+							</div>
+						</a>
+						<nav class="main-navigation">
+							<ul id="tog" class="menu">
+								<li class="menu-item"><a href="index.html">Home</a></li>
+								<li class="menu-item"><a href="about.html">Petrographers</a></li>
+								<li class="menu-item"><a href="services.html">Services</a></li>
+								<li class="menu-item"><a href="order.html">Order</a></li>
+								<li class="menu-item"><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="hero">
+			<ul class="slides">
+				<li data-bg-image="images/cliffs.jpg">
+					<div class="container">
+						<div class="slide-content">
+							<h2 class="slide-title">Petrographic Laboratory</h2>
+							<p>Since 1980, geoscientists and industry leaders have used the technical and professional
+								services of Geo Lab..</p>
+							<a href="order.html" class="button">ORDER NOW</a>
+						</div>
+					</div>
+				</li>
+				<li data-bg-image="images/petro.jpg">
+					<div class="container">
+						<div class="slide-content">
+							<h2 class="slide-title">Sample Preparation & Petrographic Analysis</h2>
+							<p>
+								We prepare both covered and polished slide sections, kimberlites,
+								as well as offer in-depth petrographic descriptions.</p>
+							<a href="services.html" class="button">See details</a>
+						</div>
+					</div>
+				</li>
+				<li data-bg-image="images/petrographer.jpg">
+					<div class="container">
+						<div class="slide-content">
+							<h2 class="slide-title">Meet Our World Famous Petrographers</h2>
+							<p>Find details about our senior petrographers from top universities of Canada .</p>
+							<a href="about.html" class="button">See details</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<main class="main-content">
+
+
+			<div class="fullwidth-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h2 class="section-title">Testimonials</h2>
+							<ul class="testimonial-list">
+								<li>
+									<blockquote>
+										<p>Working with Geo lab since 1990. Best thin sections, best service in Canada.
+											Best petrographers in region when it comes to mining exploration. You wont
+											regret! </p>
+										<cite>Kamil Osman - Golder Mining</cite>
+									</blockquote>
+								</li>
+								<li>
+									<blockquote>
+										<p>Service is friendly, helpful, and competent, and your customer service was
+											great! Top notch quality of polished slabs and thin sections !</p>
+										<cite>Jonathan Rose - Miami University </cite>
+									</blockquote>
+								</li>
+								<li>
+									<blockquote>
+										<p>I appreciate your precise and immediate response to questions. Best quality
+											work I have ever experienced in my entire career.</p>
+										<cite>Betty Sinner - Simon Freaser University</cite>
+									</blockquote>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<h2 class="section-title">Lab Equipments</h2>
+							<iframe width="555" height="375" src="https://www.youtube.com/embed/jwINzjI_hj0?controls=0"
+								title="YouTube video player"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fullwidth-block" data-bg-color="#edf2f4">
+				<div class="container">
+					<h2 class="section-title">Contact Us</h2>
+					<div class="row contact-form">
+						<form action="#">
+							<div class="col-md-4">
+								<p><input id="nameIndex" type="text" placeholder="Your name..."></p>
+								<p><input id="emailIndex" type="text" placeholder="Email..."></p>
+								<p><input id="contentIndex" type="text" placeholder="Content..."></p>
+							</div>
+							<div class="col-md-8">
+								<p>
+									<textarea id="messageIndex"
+										placeholder="Pelase share your feedback or send message"></textarea>
+								</p>
+								<p class="text-right">
+									<input id="sendMessage" type="submit" value="Send message"
+										onclick="GenerateMessage()">
+								</p>
+							</div>
+						</form>
+					</div> <!-- .row -->
+				</div> <!-- .container -->
+			</div> <!-- .fullwidth-block -->
+		</main> <!-- .main-content -->
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div style="text-align: right;" class="col-md-6">
+						<div class="foot">
+							<h3 class="foot-title">Our address</h3>
+							<strong>Geo Lab INC</strong>
+							<address>228 Shine Road, Vancouver, CA 34565</address>
+							<a href="tel:+1600123456">+1 600 123 456</a> <br>
+							<a href="mailto:geolab@geolab.com">geolab@geolab.com</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="foot">
+							<h3 class="foot-title">Social media</h3>
+							<p>Feel free to contact our social media pages.</p>
+							<div class="social-links">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .row -->
+				<p style="text-align: center;">Copyright 2021 Geo Lab. Designed by <a href="#"
+						title="Designed by FurkanB" target="_blank">Furkan BOZOKLUOGLU</a>. All rights
+					reserved</p>
+
+
+
+			</div> <!-- .container -->
+
+		</footer>
+	</div>
+
+
+	<script src="js/min/jquery-1.11.1.min.js"></script>
+	<script src="js/min/plugins.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

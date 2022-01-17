@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>Order : Geo Lab</title>
+
+
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+
+	<div class="site-content">
+		<header class="site-header collapsed-nav" data-bg-image="">
+			<div class="container">
+				<div class="header-bar">
+					<a href="index.html" class="brand">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">Geo Lab</h1>
+							<small class="site-description">Petrography Consulting</small>
+						</div>
+					</a>
+
+					<nav class="main-navigation">
+
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">Petrographers</a></li>
+							<li class="menu-item"><a href="services.html">Services</a></li>
+							<li class="menu-item"><a href="order.html">Order</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div class="page-head" data-bg-image="images/order2.jpg">
+			<div class="container">
+				<h2 class="page-title">Order</h2>
+
+			</div>
+		</div>
+
+		<main class="main-content">
+
+			<div class="fullwidth-block">
+				<div class="container">
+
+					<h2 class="section-title">Online Order Form</h2>
+					<div class="row contact-form">
+						<form action="#">
+							<h3 class="order-info">Personal Details</h3>
+							<div class="col-md-4">
+								<p><input type="text" id="name" placeholder="Your name...(*)"></p>
+								<p><input type="text" id="lastname" placeholder="Last name...(*)"></p>
+								<p><input type="text" id="organization" placeholder="Organization Name.."></p>
+							</div>
+							<div class="col-md-8">
+								<p><input type="text" id="email" placeholder="Email...(*)"></p>
+								<p><input type="text" id="phone" placeholder="Phone...(*)"></p>
+								<p><input type="text" id="fax" placeholder="Fax..."></p>
+							</div>
+
+							<h3 class="order-info">Address Details</h3>
+
+							<div class="col-md-6">
+								<p><input type="text" id="address" placeholder="Street address...(*)"></p>
+								<p><input type="text" id="address2" placeholder="Street address line 2.."></p>
+								<p><input type="text" id="city" placeholder="City...(*)"></p>
+							</div>
+							<div class="col-md-6">
+								<p><input type="text" id="region" placeholder="Region..."></p>
+								<p><input type="text" id="postalcode" placeholder="Postal Code...(*)"></p>
+								<p><input type="text" id="country" placeholder="Country...(*)"></p>
+							</div>
+							<h3 class="order-info">Order Details</h3>
+
+
+
+
+							<div class="col-md-4">
+								<p>Thin Sections</p>
+								<p> 50 mm x 75 mm | Standart $80<input type="text" id="ts1"
+										placeholder="Please enter quantity">
+								</p>
+								<p>27 mm x 46 mm | Standart $40<input type="text" id="ts2" placeholder="-">
+								</p>
+								<p> 50 mm x 75 mm | Polished $100<input type="text" id="ts3" placeholder="-">
+								</p>
+								<p>27 mm x 46 mm | Polished $60<input type="text" id="ts4" placeholder="-">
+								</p>
+
+							</div>
+
+							<div class="col-md-4">
+								<p>Petrographic Descriptions</p>
+								<p> 50 mm x 75 mm | Thin Section Description $300<input type="text" id="ts1-d"
+										placeholder="-">
+								</p>
+								<p>27 mm x 46 mm | Thin Section Description $250<input type="text" id="ts2-d"
+										placeholder="-">
+								</p>
+								<p> 50 mm x 75 mm | Polished Section Description $325<input type="text" id="ts3-d"
+										placeholder="-">
+								</p>
+								<p>27 mm x 46 mm | Polished Section Description $275<input type="text" id="ts4-d"
+										placeholder="-">
+								</p>
+
+							</div>
+
+							<div class="col-md-4">
+								<p>Kimberlites</p>
+								<p> Thin Section | $40<input type="text" id="ts1-k" placeholder="-">
+								</p>
+								<p>Wedged Thin Section | $40<input type="text" id="ts2-k" placeholder="-">
+								</p>
+								<p> Polished | $100<input type="text" id="ts3-k" placeholder="-">
+								</p>
+								<p>Core Slab | $40<input type="text" id="ts4-k" placeholder="-">
+								</p>
+
+							</div>
+							<div class="col-md-12">
+								<p>
+									<textarea id="description" placeholder="Please enter order descriptions"></textarea>
+								</p>
+								<p class="text-right">
+									<input id="placeOrder" type="submit" value="PLACE ORDER" onclick="saveOrder()">
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</main> <!-- .main-content -->
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div style="text-align: right;" class="col-md-6">
+						<div class="foot">
+							<h3 class="foot-title">Our address</h3>
+							<strong>Geo Lab INC</strong>
+							<address>228 Shine Road, Vancouver, CA 34565</address>
+							<a href="tel:+1600123456">+1 600 123 456</a> <br>
+							<a href="mailto:geolab@geolab.com">geolab@geolab.com</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="foot">
+							<h3 class="foot-title">Social media</h3>
+							<p>Feel free to contact our social media pages.</p>
+							<div class="social-links">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .row -->
+				<p style="text-align: center;">Copyright 2021 Geo Lab. Designed by <a href="#"
+						title="Designed by FurkanB" target="_blank">Furkan BOZOKLUOGLU</a>. All rights
+					reserved</p>
+
+
+
+			</div> <!-- .container -->
+
+		</footer>
+	</div>
+
+	<script src="js/min/jquery-1.11.1.min.js"></script>
+	<script src="js/min/plugins.js"></script>
+	<script src="js/app.js"></script>
+
+
+
+</body>
+
+</html>
